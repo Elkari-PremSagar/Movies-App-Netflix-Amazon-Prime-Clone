@@ -112,7 +112,6 @@
     font-size: 13px;
     padding: 8px;
   }
-  
 }
 
 /* Tablet (481px–768px) */
@@ -128,7 +127,6 @@
     font-size: 15px;
     padding: 9px;
   }
-  
 }
 
 /* Desktop (>=769px) */
@@ -139,5 +137,4 @@
   .login-website-logo {
     width: 160px;
   }
- 
 }
