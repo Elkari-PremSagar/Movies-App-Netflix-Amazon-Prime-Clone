@@ -1,0 +1,98 @@
+.account-bg {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-container {
+  width: 80%;
+  max-width: 800px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #131313;
+  margin-bottom: 20px;
+}
+
+.separator {
+  border: 1px solid #94a3b8;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.label {
+  color: #94a3b8;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.membership-info,
+.plan-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 500;
+  color: #131313;
+}
+
+.quality {
+  background-color: transparent;
+  border: 1px solid #94a3b8;
+  color: #131313;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logout-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.logout-btn {
+  background-color: #d81f26;
+  border: none;
+  color: #ffffff;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .account-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .membership-info,
+  .plan-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .value,
+  .quality {
+    margin-bottom: 8px;
+  }
+}

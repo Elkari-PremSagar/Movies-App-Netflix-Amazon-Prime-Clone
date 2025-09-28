@@ -1,0 +1,190 @@
+.home-container {
+  background-color: #0f0f0f;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Banner */
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  width: 100%;
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.banner-overview {
+  font-size: 16px;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.play-btn {
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Sections */
+.section {
+  margin: 30px 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Movie Cards */
+
+/* Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* Failure View */
+.failure-view {
+  text-align: center;
+  padding: 20px;
+}
+
+.failure-img {
+  width: 50px;
+}
+
+.failure-msg {
+  margin: 10px 0;
+}
+
+.retry-btn {
+  background: #d81f26;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.slick-slide {
+  padding: 8px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 28px !important;
+  z-index: 2;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 28px;
+  color: #fff;
+}
+
+/* --------------------
+   Responsive Queries
+-------------------- */
+
+/* Extra Small <576px */
+@media (max-width: 575.98px) {
+  .banner {
+    height: 50vh;
+  }
+  .banner-title {
+    font-size: 20px;
+  }
+  .banner-overview {
+    font-size: 12px;
+    max-width: 90%;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+}
+
+/* Small ≥576px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner {
+    height: 55vh;
+  }
+  .banner-title {
+    font-size: 24px;
+  }
+  .banner-overview {
+    font-size: 13px;
+    max-width: 85%;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+/* Medium ≥768px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner {
+    height: 60vh;
+  }
+  .banner-title {
+    font-size: 28px;
+  }
+  .banner-overview {
+    font-size: 14px;
+    max-width: 70%;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+}
+
+/* Large ≥992px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner {
+    height: 65vh;
+  }
+  .banner-title {
+    font-size: 32px;
+  }
+  .banner-overview {
+    font-size: 15px;
+    max-width: 65%;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+/* Extra Large ≥1200px */
+@media (min-width: 1200px) {
+  .banner {
+    height: 70vh;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+  .banner-overview {
+    font-size: 16px;
+    max-width: 600px;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+}

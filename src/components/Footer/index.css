@@ -1,0 +1,74 @@
+.footer-container {
+  background-color: #131313;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.social-icon {
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #e50914;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 🔹 Responsive Media Queries */
+
+/* Extra Small (<576px) */
+@media (max-width: 575.98px) {
+  .social-icons {
+    gap: 12px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+/* Small (≥576px and <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .social-icon {
+    font-size: 20px;
+  }
+}
+
+/* Medium (≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .social-icon {
+    font-size: 24px;
+  }
+}
+
+/* Large (≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .social-icon {
+    font-size: 26px;
+  }
+}
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
+  .social-icon {
+    font-size: 28px;
+  }
+}

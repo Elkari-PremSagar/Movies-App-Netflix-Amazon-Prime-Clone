@@ -1,0 +1,52 @@
+.search-movie-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  list-style-type: none;
+}
+
+.search-movie-card:hover {
+  transform: scale(1.05);
+}
+
+.search-movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* =============================
+   Responsive Grid (Search Page)
+   ============================= */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+}
+
+/* Small mobiles */
+@media screen and (max-width: 480px) {
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 8px;
+  }
+}

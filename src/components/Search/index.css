@@ -1,0 +1,47 @@
+.search-page {
+  background-color: #181818;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.search-movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.loader-wrapper,
+.failure-view,
+.no-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+}
+
+.failure-img,
+.no-results-img {
+  width: 250px;
+  max-width: 80%;
+}
+
+.failure-text,
+.no-results-text {
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.retry-btn {
+  background-color: #d81f26;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}

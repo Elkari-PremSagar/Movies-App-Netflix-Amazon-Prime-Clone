@@ -1,0 +1,143 @@
+/* Background */
+.login-bg-container {
+  background-image: url('https://res.cloudinary.com/daelhwxsf/image/upload/v1757841651/netfilx_1_u346f4.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Card */
+.login-card {
+  background-color: #0f0f0f;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Logo */
+.login-website-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: block;
+}
+.heading {
+  font-family: HK Grotesk;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.username-input-field,
+.password-input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #475569;
+  background-color: #ffffff;
+  color: #0f0f0f;
+}
+
+.login-button {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #f6121d;
+}
+
+.error-message {
+  color: #ff0b37;
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile (<480px) */
+@media screen and (max-width: 480px) {
+  .login-card {
+    padding: 25px;
+    max-width: 280px;
+  }
+  .login-website-logo {
+    width: 120px;
+  }
+  .login-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .input-label {
+    font-size: 11px;
+  }
+  .username-input-field,
+  .password-input-field {
+    font-size: 13px;
+    padding: 8px;
+  }
+  
+}
+
+/* Tablet (481px–768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login-card {
+    max-width: 400px;
+    padding: 35px;
+  }
+  .login-website-logo {
+    width: 140px;
+  }
+  .login-button {
+    font-size: 15px;
+    padding: 9px;
+  }
+  
+}
+
+/* Desktop (>=769px) */
+@media screen and (min-width: 769px) {
+  .login-card {
+    max-width: 450px;
+  }
+  .login-website-logo {
+    width: 160px;
+  }
+ 
+}

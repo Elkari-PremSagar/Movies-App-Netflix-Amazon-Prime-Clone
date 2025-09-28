@@ -1,0 +1,222 @@
+/* index.css */
+
+.movie-item-details-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Banner Section */
+.movie-banner {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.banner-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  max-width: 600px;
+}
+
+.movie-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-runtime {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.movie-overview {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.play-btn {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Info Section */
+.movie-info-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 30px;
+  flex-wrap: wrap;
+  background-color: #181818;
+}
+
+.movie-info-column {
+  flex: 1 1 22%;
+  margin-bottom: 20px;
+}
+
+.info-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.info-text {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.info-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-list p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* Similar Movies */
+.similar-movies-section {
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.similar-movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.similar-movies-list img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Loader + Failure */
+.loader-container,
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.failure-img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.failure-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.retry-btn {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .movie-title {
+    font-size: 28px;
+  }
+
+  .movie-overview {
+    font-size: 13px;
+  }
+
+  .movie-info-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .movie-info-column {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-banner {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .movie-title {
+    font-size: 24px;
+  }
+
+  .movie-overview {
+    font-size: 12px;
+  }
+
+  .similar-movies-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-banner {
+    height: 50vh;
+    padding: 15px;
+  }
+
+  .movie-title {
+    font-size: 20px;
+  }
+
+  .movie-runtime {
+    font-size: 14px;
+  }
+
+  .play-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .movie-info-section {
+    padding: 20px 15px;
+    flex-direction: column;
+  }
+
+  .movie-info-column {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+}
