@@ -1,38 +1,60 @@
-# 🎬 Movies App – Netflix & Amazon Prime Clone
+# 🎬 Movies App
 
-A fully responsive **Movies Streaming Platform Clone** inspired by **Netflix** and **Amazon Prime**, built using **React.js**.  
-This application demonstrates real-world frontend concepts such as authentication, protected routes, API integration, routing, and component lifecycle methods.
-
----
-
-## 🚀 Live Demo
-👉 *(Add deployment link here if deployed)*
+Movies App is a **React-based movie browsing application** that allows users to authenticate, explore trending, popular, and original movies, search for movies, and view detailed information for each movie.  
+This project demonstrates core React concepts such as routing, authentication, API integration, lifecycle methods, loaders, failure views, and responsive design.
 
 ---
 
-## 📌 Project Overview
+## 🚀 Project Overview
 
-This Movies App allows users to:
-- Log in securely
-- Browse movies across different categories
-- View detailed information about each movie
-- Experience a UI inspired by popular OTT platforms
+In this project, we build a **Movies App** by applying the concepts learned in the React course.  
+The application fetches movie data from APIs, manages authentication using JWT tokens, and provides a Netflix-like user experience.
 
-The project focuses on applying **core React concepts** learned during the course in a structured, real-world application.
+This is an **individual assessment project** and all work is implemented independently.
 
 ---
 
-## ✨ Features
+## 🎯 Features
 
-- 🔐 **Authentication & Authorization**
-- 🧭 **Protected Routes**
-- 🎥 **Movies Listing & Details View**
-- 🔄 **API Data Fetching**
-- ⚛️ **Class-Based Components**
-- ⏳ **Lifecycle Methods**
-- 📱 **Responsive Design**
-- 🚦 **Loader & Error Views**
-- 🔁 **React Router Navigation**
+### 🔐 Authentication (Login Route)
+- Displays error message for invalid credentials
+- Navigates to Home Route on successful login
+- Protects Home, Popular, Search, Account, and Movie Details routes
+- Redirects authenticated users away from Login Route
+
+### 🏠 Home Route
+- Fetches **Trending Now** and **Originals** movies
+- Displays a random featured movie from Originals
+- Shows movie sliders using React Slick
+- Displays loader while fetching data
+- Shows failure view with Retry option
+- Navigates to Movie Details on movie click
+
+### ⭐ Popular Route
+- Fetches popular movies
+- Displays loader and failure views
+- Navigates to Movie Details on movie click
+
+### 🎥 Movie Item Details Route
+- Displays detailed movie information
+- Converts runtime from minutes to hours & minutes
+- Shows censor rating (A / U-A)
+- Displays similar movies
+- Retry option on failure
+
+### 🔍 Search Route
+- Searches movies using search input
+- Displays results dynamically
+- Shows “No Movies” view for empty results
+- Supports retry on API failure
+
+### 👤 Account Route
+- Displays logged-in username
+- Shows masked password
+- Logout functionality
+
+### 🚫 Not Found Route
+- Displays Not Found page for invalid routes
 
 ---
 
@@ -40,14 +62,41 @@ The project focuses on applying **core React concepts** learned during the cours
 
 - **Frontend:** React.js (Class Components)
 - **Routing:** React Router DOM
-- **Styling:** CSS
-- **API Communication:** Fetch API
-- **Code Quality:** ESLint, Prettier
-- **Package Manager:** pnpm / npm
+- **Authentication:** JWT Token (Cookies)
+- **Carousel:** React Slick
+- **Icons:** react-icons
+- **Date Formatting:** date-fns
+- **Styling:** CSS (Media Queries)
+
+---
+
+## 📂 Routes
+
+| Path | Description |
+|-----|------------|
+| `/login` | Login Route |
+| `/` | Home Route |
+| `/popular` | Popular Movies |
+| `/movies/:id` | Movie Item Details |
+| `/search` | Search Movies |
+| `/account` | Account Route |
+| `/not-found` | Not Found |
 
 ---
 
 ## 🔑 Login Credentials (For Testing)
-- **Username: rahul
-- **Password: rahul@2021
 
+Use **any one** of the following credentials:
+
+  username: rahul
+  password: rahul@2021
+  ----
+  username: kapil
+  password: moon$008
+  -----
+  username: aakash
+  password: sky@007
+  ---
+  username: harshad
+  password: joy@85
+  ---
