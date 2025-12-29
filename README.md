@@ -47,5 +47,7 @@ The project focuses on applying **core React concepts** learned during the cours
 
 ---
 
-## 📂 Folder Structure
+## 🔑 Login Credentials (For Testing)
+-Username: rahul
+-Password: rahul@2021
 
