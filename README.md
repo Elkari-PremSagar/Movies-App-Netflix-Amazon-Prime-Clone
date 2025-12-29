@@ -48,6 +48,6 @@ The project focuses on applying **core React concepts** learned during the cours
 ---
 
 ## 🔑 Login Credentials (For Testing)
--Username: rahul
--Password: rahul@2021
+- **Username: rahul
+- **Password: rahul@2021
 
