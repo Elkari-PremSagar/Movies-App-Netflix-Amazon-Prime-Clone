@@ -8,7 +8,10 @@ This project demonstrates core React concepts such as routing, authentication, A
 ## 🚀 Live Demo
 
 🔗 **Deployed URL**:🔗 https://moviesappprem.ccbp.tech 
+
 🔗 **GitHub Repository**: https://github.com/Elkari-PremSagar/Movies-App-Netflix-Amazon-Prime-Clone.git
+
+---
 
 
 ## 🚀 Project Overview
